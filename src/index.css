@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+main{
+  flex:1;
+}
+
+#root{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+}
+
+.chat{
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+
+header{
+  height: 30px;
+}
+
+.logo{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color:blanchedalmond;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.icon{
+  margin: 5px;
+}
+
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+
+main{
+  background-color: chocolate;
+}
+
+.message{
+  padding: 5px;
+  margin: 5px;
+  width: max-content;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+.message-time{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  font-size: 10px;
+}
+.message-time p{
+  user-select: none;
+}
+
+.flex-row-nowrap{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.flex-row-wrap{
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-column-wrap{
+  display: flex;
+  flex-flow: column wrap;
+}
+.flex-column-wrap{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.tinput{
+  border:none;
+  padding:5px;
+  resize: vertical;
+  flex:1;
+  max-lines: 12;
+}
+.tinput:focus{
+  outline: none;
+}
